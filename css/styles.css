@@ -1,0 +1,162 @@
+body {
+	font-size: 16px;
+	font-family: arial;
+	background-color: #FFD869;
+}
+
+#main {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+}
+
+.form {
+	width: 75%;
+	min-width: 250px;
+	max-width: 600px;
+	border-radius: 2em;
+	box-shadow: 0 6px 10px 4px #555;
+	margin: auto;
+	background-color: white;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.form .title {
+	background-color: #158CD6;
+	width: 100%;
+	border-radius: 2em 2em 0 0;
+	display: flex;
+	align-items: flex-end;
+	height: 70px;
+	padding: 2px 30px;
+	box-sizing: border-box;
+}
+
+.form .title .titleText {
+	font-size: 2em;
+}
+
+.form div {
+	margin: auto;
+	padding-top: .5em;
+	min-width: 200px;
+}
+
+.form .container {
+	width: 95%;
+}
+
+.form .colspan1{
+	width: 20%;
+	display: inline-flex;
+}
+
+.form .colspan2 {
+	width: 40%;
+	display: inline-flex;
+}
+
+.form .colspan3 {
+	width: 60%;
+	display: inline-flex;
+}
+
+.form .colspan4 {
+	width: 80%;
+}
+
+
+.form input {
+	width: 100%;
+	border-radius: 2em;
+	background-color: #64B0E2;
+	padding: .5em 2em;
+	box-sizing: border-box;
+	color: white;
+}
+
+.form .button {
+	width: 95%;
+	border-radius: 2em;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	background-color: #055589;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	padding: .5em 2em;
+	box-sizing: border-box;
+	transition: .25s;
+	cursor: pointer;
+}
+
+.form .button:hover {
+	width: 100%;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.6);
+}
+
+.hidden {
+	display: none !important;
+}
+
+.invalidInput {
+	border: 2px solid red;
+}
+
+div.lightbox{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	text-align: center;
+	background: #333;
+	background: rgba(204, 204, 204, 0.5);
+	cursor: url('/rtdemo/closeIcon.png') 24 24, auto;
+}
+
+div.lightbox:before{
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -.25em;
+}
+
+div.lightbox-content{
+	position: relative;
+	border-radius: 15px;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 25px 25px 0;
+	border: 25px solid transparent;
+	margin-left: 5%;
+	margin-right: 5%;
+	max-height: 90%;
+	max-width: 80%;
+	overflow: auto;
+	background: #fff;
+	cursor: default;
+}
+
+img.lightbox-close {
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	width: 20px;
+}
+
+.link {
+	color: blue;
+	text-decoration: underline;
+	cursor: default;
+}
+
+td, th {
+	padding: .125em .5em;
+}
