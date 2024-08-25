@@ -49,7 +49,7 @@ function createLightbox(content){
 		}
 	});
 	
-	var lightboxClose = $('<img/>',{'src':'closeIcon.png','class':'lightbox-close'})
+	var lightboxClose = $('<img/>',{'src':'/images/closeIcon.png','class':'lightbox-close'})
 	$(lightboxClose).on({
 		'click':function(){
 			$(this).closest('.lightbox').trigger('click');
